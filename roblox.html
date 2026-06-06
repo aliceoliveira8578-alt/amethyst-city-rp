@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NOME_DO_SEU_JOGO</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+background:#0d0d0d;
+color:white;
+}
+
+/* Fundo animado */
+body::before{
+content:'';
+position:absolute;
+width:200%;
+height:200%;
+background:
+radial-gradient(circle,#7b2cff 0%,transparent 25%),
+radial-gradient(circle,#ff00b7 0%,transparent 25%),
+radial-gradient(circle,#00d4ff 0%,transparent 25%);
+animation:bgMove 15s linear infinite;
+opacity:.35;
+}
+
+@keyframes bgMove{
+0%{transform:translate(-20%,-20%) rotate(0deg);}
+100%{transform:translate(-20%,-20%) rotate(360deg);}
+}
+
+.card{
+position:relative;
+z-index:2;
+width:90%;
+max-width:450px;
+padding:35px;
+border-radius:30px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+text-align:center;
+border:1px solid rgba(255,255,255,.15);
+box-shadow:0 0 40px rgba(123,44,255,.35);
+}
+
+.avatar{
+width:110px;
+height:110px;
+border-radius:50%;
+margin:auto;
+margin-bottom:15px;
+background:linear-gradient(45deg,#7b2cff,#ff00b7);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:48px;
+font-weight:bold;
+}
+
+h1{
+font-size:28px;
+margin-bottom:5px;
+}
+
+.tag{
+color:#bdbdbd;
+margin-bottom:20px;
+}
+
+.online{
+display:inline-block;
+padding:8px 15px;
+border-radius:30px;
+background:rgba(0,255,136,.15);
+color:#00ff88;
+margin-bottom:20px;
+font-weight:600;
+}
+
+.description{
+line-height:1.5;
+margin-bottom:25px;
+color:#e0e0e0;
+}
+
+.play{
+display:block;
+text-decoration:none;
+padding:18px;
+border-radius:20px;
+font-size:20px;
+font-weight:700;
+color:white;
+background:linear-gradient(45deg,#7b2cff,#ff00b7);
+box-shadow:0 0 25px rgba(255,0,183,.5);
+transition:.3s;
+}
+
+.play:hover{
+transform:scale(1.05);
+}
+
+.links{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-top:18px;
+}
+
+.link{
+padding:10px 14px;
+border-radius:15px;
+background:rgba(255,255,255,.08);
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.link:hover{
+transform:translateY(-3px);
+}
+
+.footer{
+margin-top:20px;
+font-size:12px;
+color:#a0a0a0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="avatar">R</div>
+
+<h1>NOME_DO_SEU_JOGO</h1>
+
+<p class="tag">@robloxserver</p>
+
+<div class="online">
+🟢 27 Jogadores Online
+</div>
+
+<p class="description">
+Entre no servidor privado e jogue com a comunidade!
+Eventos, atualizações e diversão todos os dias.
+</p>
+
+<a class="play" href="SEU_LINK_DO_SERVIDOR">
+🎮 ENTRAR NO SERVIDOR
+</a>
+
+<div class="links">
+<a class="link" href="#">📢 Discord</a>
+<a class="link" href="#">🎵 TikTok</a>
+<a class="link" href="#">⭐ Grupo</a>
+</div>
+
+<div class="footer">
+Feito para a comunidade ❤️
+</div>
+
+</div>
+
+</body>
+</html> 
